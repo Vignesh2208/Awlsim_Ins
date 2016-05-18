@@ -1,0 +1,211 @@
+Starting Debug for lxc0-0
+Running Command /home/vignesh/Desktop/awlsim-0.42/tests/run.sh -e 1 --node 0 /home/vignesh/Desktop/awlsim-0.42/tests/modbus/simple_client_server/sfb102_server.awl
+6 (process ID) old priority 0, new priority 10
+=== Running tests with 'python2'
+Running test 'sfb102_server.awl' with 'python2' ... ('Dest IP : ', '10.10.0.10')
+('Resolved hostname = ', '10.10.0.10')
+('IP of IDS : ', '10.10.0.10')
+No of insns to execute =  10402
+('Start time = ', 1463514026.232599, ' connection id = ', 1)
+src lxc name = lxc0-0, dst lxc name = lxc1-0, conn_id = 1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  372
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  343
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  89
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  91
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  90
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  316
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  167
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  397
+Finished executing insns in round
+No of insns to execute =  152
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  45
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  10
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  57
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  265
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  297
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  342
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  173
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  270
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  274
+Finished executing insns in round
+No of insns to execute =  3
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  279
+Finished executing insns in round
+No of insns to execute =  400
+Finished executing insns in round
+No of insns to execute =  400
+Elapsed time greater = 39.234705, cycle number = 2708

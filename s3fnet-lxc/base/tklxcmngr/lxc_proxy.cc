@@ -195,6 +195,19 @@ void LXC_Proxy::printInfo()
 ltime_t LXC_Proxy::getElapsedTime()
 {
 	struct timeval incomingPacketTimestamp;
+	char local_lxcName[100];
+	char * line = NULL;	
+	int line_no = 1;
+	int i = 0;
+	struct awlsim_gettime_struct gettime;
+	
+	for(i = 0; i < 100; i++){
+		local_lxcName[i] = '\0';
+		gettime.buf[i] = '\0';
+	}
+	gettime.pid = PID;
+	strcpy(gettime.buf,lxcName);
+
 	gettimepid(PID, &incomingPacketTimestamp, NULL);
 
 	assert(incomingPacketTimestamp.tv_sec >= simulationStartSec);
@@ -202,6 +215,47 @@ ltime_t LXC_Proxy::getElapsedTime()
 	long      secElapsed = incomingPacketTimestamp.tv_sec  - simulationStartSec;
 	long microSecElapsed = incomingPacketTimestamp.tv_usec - simulationStartMicroSec;
 	long elapsedMicroSec = secElapsed * 1000000 +  microSecElapsed;
+	
+	int fd = open("/proc/awlsim/vt_time",O_RDWR);
+	
+	if(fd >= 0){
+		int ret = ioctl(fd,AWLSIM_VIRT_TIME_GETTIME,&gettime);
+		if(ret >= 0){
+			line = gettime.buf;
+			while(line)
+			{
+			      char * nextLine = strchr(line, '\n');
+			      if (nextLine) *nextLine = '\0';  // temporarily terminate the current line
+			      
+			      if(line_no == 1){
+				 	//debugPrint("Secs : %lu\n",atol(line));
+				 	secElapsed = atol(line) - simulationStartSec;
+			      }
+			      
+				  if(line_no == 2){
+					//debugPrint("uSecs : %lu\n",atol(line));
+					microSecElapsed = atol(line) - simulationStartMicroSec;
+					break;
+			      }
+			      line_no ++;
+			      
+			      if (nextLine)*nextLine = '\n';  // then restore newline-char, just to be tidy    
+			      line = nextLine ? (nextLine+1) : NULL;
+			}
+
+			elapsedMicroSec = secElapsed * 1000000 + microSecElapsed;
+		}
+		else{
+			printf("Proxy->getElapsedTime() ioctl < 0 for lxc %s\n",lxcName);
+		}
+		
+	}
+	else{
+		printf("Proxy->getElapsedTime() could not open file for lxc %s\n",lxcName);
+	}
+
+	
+	close(fd);
 	return elapsedMicroSec;
 }
 

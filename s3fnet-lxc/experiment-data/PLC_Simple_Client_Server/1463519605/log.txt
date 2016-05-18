@@ -1,0 +1,99 @@
+|==================================================
+| LXC Manager Created
+| Simulation has 5 timelines
+|==================================================
+LXC proxy initialization: lxc0-0 successfull
+LXC proxy initialization: lxc1-0 successfull
+ ____________________________________________
+|
+| Printing out Info about Timeline 0 ...
+|_____
+      | Timeline 0 has Proxy LXC lxc0-0
+      |______________________________________
+ ____________________________________________
+|
+| Printing out Info about Timeline 1 ...
+|_____
+      | Timeline 1 has Proxy LXC lxc1-0
+      |______________________________________
+ ____________________________________________
+|
+| Printing out Info about Timeline 2 ...
+|_____
+      | Timeline 2 has has no LXC proxies
+      |______________________________________
+ ____________________________________________
+|
+| Printing out Info about Timeline 3 ...
+|_____
+      | Timeline 3 has has no LXC proxies
+      |______________________________________
+ ____________________________________________
+|
+| Printing out Info about Timeline 4 ...
+|_____
+      | Timeline 4 has has no LXC proxies
+      |______________________________________
+|==================================================
+| Creating and Launching LXCs                      
+|==================================================
+
+|==================================================
+| Dilating and Adding LXCs to Experiment           
+|==================================================
+
+GET LXC lxc0-0 TDF 15.000000 PID 6537 Finished
+GET LXC lxc1-0 TDF 15.000000 PID 6624 Finished
+|==================================================
+| Calling SynchronizeAndFreeze. Syncing up LXCs
+|==================================================
+
+| lxc0-0 Frozen at [ 1463519607 sec 303603 usec ]
+| lxc1-0 Frozen at [ 1463519607 sec 303603 usec ]
+
+|==================================================
+Timeline 0 advanced its LXCs by 3.050762 seconds
+Timeline 1 advanced its LXCs by 3.008488 seconds
+Timeline 2 advanced its LXCs by 0.000000 seconds
+Timeline 3 advanced its LXCs by 0.000000 seconds
+Timeline 4 advanced its LXCs by 0.000000 seconds
+|==================================================
+| Calling STOP EXPERIMENT
+|==================================================
+|============================================================|
+| Overall Stats
+|------------------------------------------------------------|
+| OUT | Total Pkts Sent to LXCs       : 36
+| OUT | Total Pkts error late to LXC  : 2847761
+| OUT | Avg Pkts error late to LXC    : 79104.47222222
+|------------------------------------------------------------|
+| IN  | Total Pkts Injected to past   : 4
+| IN  | Total Error Injected to past  : 5867
+| IN  | Average past error            : 1466.75000000
+|============================================================|
+| TOTAL Advance ERROR        : 7693347
+| TOTAL Times Advanced       : 84191
+| TOTAL Times Over           : 130
+| TOTAL Times Under          : 83637
+| TOTAL Times Exact          : 424
+| Average Advance ERROR      : 91.37968429
+|============================================================|
+| TOTAL Pkt Timestamp ERROR  : 0
+| TOTAL Pkts Injected        : 25
+| Average Packet Inaccuracy  : 0.00000000
+|============================================================|
+| MIN Advance Error          : 0
+| MAX Advance Error          : 351100
+| Advance Error RMS          : 178.37577240
+| Advance Error Variance     : 8848987.52559799
+| Advance Error Std Dev      : 2974.72478149
+|============================================================|
+
+|============================================================|
+| Timeline 0 advanced 25915 times ( Progress 25915 ) for a total of 41.218307 seconds
+| Timeline 1 advanced 58276 times ( Progress 58276 ) for a total of 32.572155 seconds
+| Timeline 2 advanced 0 times ( Progress 0 ) for a total of 0.000000 seconds
+| Timeline 3 advanced 0 times ( Progress 0 ) for a total of 0.000000 seconds
+| Timeline 4 advanced 0 times ( Progress 0 ) for a total of 0.000000 seconds
+|============================================================|
+| Cumulative emulation second

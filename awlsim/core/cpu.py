@@ -494,6 +494,10 @@ class S7CPU(object): #+cdef
 		self.fbs = {}
 		self.reset()
 		self.local_id = 1
+		self.n_insns_executed_in_round = 0
+		self.n_insn_curr_round = 0
+		self.cpu_time_secs = 0
+		self.spu_time_usecs = 0
 		self.enableExtendedInsns(False)
 		self.enableObTempPresets(False)
 		self.network_interface_type = 0 #IP
@@ -791,8 +795,37 @@ class S7CPU(object): #+cdef
 		# Run the user program cycle
 		while self.callStack:
 			while cse.ip < len(cse.insns): # -- cse is like a list of instructions referenced by the ip (Instruction pointer) for this block
+				fd = os.open("/proc/awlsim/vt_time" ,os.O_RDWR)
+				if fd < 0 :
+					print("ERROR opening awlsim/vt_time file")
+					sys.exit(0)
+				while self.n_insn_curr_round == 0 :
+					self.n_insns_executed_in_round = 0
+					data = os.read(fd,200)
+					if len(data) > 0 :
+						ls = data.split('\n')
+						secElapsed = int(ls[0])
+						usecElapsed = int(ls[1])
+						self.n_insn_curr_round = int(ls[2])
+						if self.n_insn_curr_round > 0 :
+							print("No of insns to execute = ", self.n_insn_curr_round)
+						self.cpu_time_secs = secElapsed
+						self.cpu_time_usecs = usecElapsed
+
+				
+
 				insn, self.relativeJump = cse.insns[cse.ip], 1
 				insn.run()
+				self.n_insns_executed_in_round = self.n_insns_executed_in_round + 1
+				data = "Awlsim,lxc" + str(self.local_id)  + "-0," + str(1) + ",0,"
+				os.write(fd,data)
+
+				if self.n_insns_executed_in_round == self.n_insn_curr_round :
+					print("Finished executing insns in round")
+					self.n_insn_curr_round = 0
+
+
+				os.close(fd)
 				if self.cbPostInsn:
 					self.cbPostInsn(cse, self.cbPostInsnData)
 				cse.ip += self.relativeJump

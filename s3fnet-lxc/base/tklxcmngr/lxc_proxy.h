@@ -29,6 +29,12 @@
 #define TIME_200_MS_IN_US           200000
 #define TIME_100_MS_IN_US           100000
 
+#define AWLSIM_VIRT_TIME_IOC_MAGIC  'l'
+
+#define AWLSIM_VIRT_TIME_GETTIME _IOR(AWLSIM_VIRT_TIME_IOC_MAGIC,  1, int) // write to the rx buffer from user space. used by S3F simulator.
+#define AWLSIM_VIRT_TIME_GETSTATUS _IOR(AWLSIM_VIRT_TIME_IOC_MAGIC,  2, int) // read the tx buffer into user space. used by S3F simulator.
+
+
 
 enum LxcCommand {
 	LXC_CREATE,
@@ -37,6 +43,12 @@ enum LxcCommand {
 	LXC_START_AS_RUNNER,
 	LXC_START_PRODUCER
 
+};
+
+struct awlsim_gettime_struct{
+
+	char buf[100];
+	long pid;
 };
 
 class LxcManager;

@@ -1,0 +1,791 @@
+Starting Debug for lxc1-0
+Running Command /home/vignesh/Desktop/awlsim-0.42/tests/run.sh -e 1 --node 1 /home/vignesh/Desktop/awlsim-0.42/tests/modbus/simple_client_server_multiple/sfb102_client.awl
+6 (process ID) old priority 0, new priority 10
+=== Running tests with 'python2'
+Running test 'sfb102_client.awl' with 'python2' ... ('Dest IP : ', '10.10.0.9')
+('Resolved hostname = ', '10.10.0.9')
+('IP of IDS : ', '10.10.0.10')
+No of insns to execute =  3001
+('Start time = ', 1463521124.92301, ' connection id = ', 2)
+src lxc name = lxc1-0, dst lxc name = lxc0-0, conn_id = 2
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Connection established at 1463521124.92
+Resumed connection at : 1463521124.96
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  6
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  293
+Finished executing insns in round
+No of insns to execute =  5
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3
+Finished executing insns in round
+No of insns to execute =  3
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  109
+Finished executing insns in round
+No of insns to execute =  39
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  156
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  169
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  29
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  245
+Finished executing insns in round
+No of insns to execute =  300
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[8\x0bM~'), ' Avg read time = ', 1e-06, ' Number = ', 1.0, ' total read time = ', 1e-06)
+Response processed at 1463521125.75
+Resumed connection at : 1463521125.75
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  297
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  75
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  85
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  131
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  212
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  267
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  5
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  283
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[e\x1b\xf5~'), ' Avg read time = ', 0.0, ' Number = ', 1.0, ' total read time = ', 0.0)
+Response processed at 1463521126.49
+Resumed connection at : 1463521126.49
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  271
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  168
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  286
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  52
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  192
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[\x04\x880~'), ' Avg read time = ', 1e-06, ' Number = ', 1.0, ' total read time = ', 1e-06)
+Response processed at 1463521126.89
+Resumed connection at : 1463521126.89
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  78
+Finished executing insns in round
+No of insns to execute =  148
+Finished executing insns in round
+No of insns to execute =  152
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  126
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  135
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  243
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[\xcf\xa3\xb9~'), ' Avg read time = ', 1e-06, ' Number = ', 1.0, ' total read time = ', 1e-06)
+Response processed at 1463521127.15
+Resumed connection at : 1463521127.15
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  200
+Finished executing insns in round
+No of insns to execute =  45
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[_\x93\xbd~'), ' Avg read time = ', 1e-06, ' Number = ', 1.0, ' total read time = ', 1e-06)
+Response processed at 1463521127.29
+Resumed connection at : 1463521127.29
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  221
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[\x9e\x8b\xe9~'), ' Avg read time = ', 1e-06, ' Number = ', 1.0, ' total read time = ', 1e-06)
+Response processed at 1463521127.45
+Resumed connection at : 1463521127.45
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  222
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  238
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  22
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  132
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  262
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  9
+Finished executing insns in round
+No of insns to execute =  290
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  241
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[\xfd9\xe8~'), ' Avg read time = ', 0.0, ' Number = ', 1.0, ' total read time = ', 0.0)
+Response processed at 1463521127.74
+Resumed connection at : 1463521127.74
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300
+Finished executing insns in round
+No of insns to execute =  300

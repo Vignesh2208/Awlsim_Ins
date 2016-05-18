@@ -1,0 +1,13 @@
+Starting Debug for lxc1-0
+Running Command /home/vignesh/Desktop/awlsim-0.42/tests/run.sh -e 1 --node 1 /home/vignesh/Desktop/awlsim-0.42/tests/modbus/simple_client_server/sfb102_client.awl
+6 (process ID) old priority 0, new priority 10
+=== Running tests with 'python2'
+Running test 'sfb102_client.awl' with 'python2' ... ('Dest IP : ', '10.10.0.9')
+('Resolved hostname = ', '10.10.0.9')
+('IP of IDS : ', '10.10.0.10')
+No of insns to execute =  26406
+('Start time = ', 1463513426.669243, ' connection id = ', 2)
+src lxc name = lxc1-0, dst lxc name = lxc0-0, conn_id = 2
+Elapsed time greater = 5.575586, cycle number = 206
+Connection established at 1463513426.67
+Resumed connection at : 1463513426.67

@@ -170,7 +170,7 @@ int fix_timeline(int timeline){
 	 for( i = 0; i < 100; i++)
 	 	command[i] = '\0';
 
-	printf("Fixing timeline  %d..\n",timeline);
+	//printf("Fixing timeline  %d..\n",timeline);
 	sprintf(command, "%c,%d", FIX_TIMELINE, timeline);
 	send_to_timekeeper(command);
 

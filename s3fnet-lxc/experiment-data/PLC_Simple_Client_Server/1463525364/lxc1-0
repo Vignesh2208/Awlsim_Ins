@@ -1,0 +1,271 @@
+Starting Debug for lxc1-0
+Running Command /home/vignesh/Desktop/awlsim-0.42/tests/run.sh -e 1 --node 1 /home/vignesh/Desktop/awlsim-0.42/tests/modbus/simple_client_server_multiple/sfb102_client.awl
+6 (process ID) old priority 0, new priority 10
+=== Running tests with 'python2'
+Running test 'sfb102_client.awl' with 'python2' ... ('Dest IP : ', '10.10.0.9')
+('Resolved hostname = ', '10.10.0.9')
+('IP of IDS : ', '10.10.0.10')
+No of insns to execute =  33011
+('Start time = ', 1463525366.823397, ' connection id = ', 2)
+src lxc name = lxc1-0, dst lxc name = lxc0-0, conn_id = 2
+Connection established at 1463525366.82
+Resumed connection at : 1463525366.82
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  2994
+Finished executing insns in round
+No of insns to execute =  7
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3000
+Finished executing insns in round
+No of insns to execute =  57
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  132
+Finished executing insns in round
+No of insns to execute =  434
+Finished executing insns in round
+No of insns to execute =  555
+Finished executing insns in round
+No of insns to execute =  440
+Finished executing insns in round
+No of insns to execute =  469
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  645
+Finished executing insns in round
+No of insns to execute =  38
+Finished executing insns in round
+No of insns to execute =  65
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  33
+Finished executing insns in round
+No of insns to execute =  2516
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+('Recv msg = ', bytearray(b'~\x00\x10\x03\x02\x124[\x8aK\x9c~'), ' Avg read time = ', 1.4105609376868798e-05, ' Number = ', 8361.0, ' total read time = ', 0.11793700000000001)
+Response processed at 1463525367.49
+Resumed connection at : 1463525367.49
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3000
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3000
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3000
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3000
+Finished executing insns in round
+No of insns to execute =  1
+Finished executing insns in round
+No of insns to execute =  3000
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001
+Finished executing insns in round
+No of insns to execute =  3001

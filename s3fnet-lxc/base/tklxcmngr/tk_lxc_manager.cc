@@ -33,6 +33,7 @@
 #define ETHER_TYPE_8021Q (0x8100)
 #define ETHER_TYPE_IPV6  (0x86DD)
 #define PACKET_SIZE 1600
+#define PER_INSN_DURATION 1 // in microseconds
 
 	//----------------------------------------------------------------------------------------------------------------------
 	// 												LXC Manager Class Functions
@@ -174,7 +175,7 @@ void* LxcManager::manageIncomingPacketsByTimeLine(int timelineID)
 			break;
 		}
 
-		int fd = open("/dev/s3fserial0",0);
+		
 
 		for (unsigned int i = 0; i < proxiesOnTimeline->size(); i++)
 		{
@@ -193,10 +194,11 @@ void* LxcManager::manageIncomingPacketsByTimeLine(int timelineID)
 			int mask = 0;
 			ltime_t temp_arrival_time = proxy->getElapsedTime();
 
-			
+			int fd = open("/dev/s3fserial0",0);	
+
 			if(fd >= 0){
 
-				/* Temporarily commented out for now */
+				
 				for(j = 0; j < 100; j++){
 					ioctl_conn.owner_lxc_name[j] = '\0';
 					ioctl_conn.dst_lxc_name[j] = '\0';
@@ -207,12 +209,14 @@ void* LxcManager::manageIncomingPacketsByTimeLine(int timelineID)
 					j = 0;
 					while( j < 8){
 						if( mask & (1 << j)){
-							printf("Connection %d active on lxc : %s after %lu milliseconds\n",j,proxy->lxcName,temp_arrival_time/1000);
+							//printf("Connection %d active on lxc : %s after %lu milliseconds\n",j,proxy->lxcName,temp_arrival_time/1000);
 							owner_host->inNet()->getTopNet()->injectSerialEvent(owner_host,temp_arrival_time,j);
 						}
 						j = j + 1;
 					}
 				}
+
+			
 				close(fd);
 
 			}
@@ -275,7 +279,7 @@ void* LxcManager::manageIncomingPackets()
 	{
 		if (isSimulatorRunning == false) break;
 
-		int fd = open("/dev/s3fserial0",0);
+		
 
 		for (unsigned int i = 0; i < listOfProxies.size(); i++)
 		{
@@ -292,12 +296,13 @@ void* LxcManager::manageIncomingPackets()
 			struct ioctl_conn_param ioctl_conn;
 			int mask = 0;
 			ltime_t temp_arrival_time = proxy->getElapsedTime();
-
+			
+			int fd = open("/dev/s3fserial0",0);
 			
 			if(fd >= 0){
 
-				/* Temporarily commented out for now */
-				/*for(j = 0; j < 100; j++){
+			
+				for(j = 0; j < 100; j++){
 					ioctl_conn.owner_lxc_name[j] = '\0';
 					ioctl_conn.dst_lxc_name[j] = '\0';
 				}
@@ -312,7 +317,7 @@ void* LxcManager::manageIncomingPackets()
 						}
 						j = j + 1;
 					}
-				}*/
+				}
 				close(fd);
 
 			}
@@ -848,6 +853,40 @@ bool LxcManager::advanceLXCsOnTimeline(unsigned int timelineID, ltime_t timeToAd
 		#endif
 
 		// time_needed_to_advance is <= 0 and therefore theres no need to advance
+		
+		int fd = open("/proc/awlsim/vt_time",O_RDWR);
+		if(fd >= 0){
+			int status = ioctl(fd,AWLSIM_VIRT_TIME_GETSTATUS,proxyOnTimeline->lxcName);
+			if(status == 0){
+				if(time_needed_to_advance <= 0){
+					//printf("time_needed_to_advance = %d\n",time_needed_to_advance);
+					close(fd);
+					continue;
+				}
+				else{
+
+					long n_insns_curr_round = time_needed_to_advance/PER_INSN_DURATION;
+					long frac_insns_curr_round = time_needed_to_advance % PER_INSN_DURATION;
+					char write_buffer[200];
+					int k = 0;
+					for(k = 0; k < 200; k++)
+						write_buffer[k] = '\0';
+					sprintf(write_buffer,"S3FNet,%s,%lu,%lu,",proxyOnTimeline->lxcName,n_insns_curr_round,frac_insns_curr_round);
+					if(n_insns_curr_round > 0)
+						printf("Progress:%s, write_buffer : %s, curr lxc_time = %lu\n",proxyOnTimeline->lxcName,write_buffer,lxc_actual_vt);
+					write(fd,write_buffer,strlen(write_buffer));
+				}
+			}
+			else{
+				//printf("Status = %d\n",status);
+			}
+
+		}
+		else{
+			printf("Error opening /proc/awlsim/vt_time\n");
+		}
+		close(fd);
+
 		if (time_needed_to_advance <= 0)
 			continue;
 
@@ -885,6 +924,7 @@ bool LxcManager::advanceLXCsOnTimeline(unsigned int timelineID, ltime_t timeToAd
 	//debugPrint("Progress call made successfully. timeline = %d\n", timelineID);	
 	unsigned long startTime = getWallClockTime();
 	ret = progress((int)timelineID, PROGRESS_FLAG);		// 0 Don't FORCE | 1 FORCE
+	//ret = progress((int)timelineID, 0);
 	//ret = progress((int)timelineID, 1);		// 0 Don't FORCE | 1 FORCE
 	unsigned long finishTime = getWallClockTime();
 	
@@ -912,7 +952,7 @@ bool LxcManager::advanceLXCsOnTimeline(unsigned int timelineID, ltime_t timeToAd
 		}
 
 		if(advanceDifference > 1000){
-			fix_timeline(timelineID);
+			//fix_timeline(timelineID);
 		}
 
 		#ifdef ADVANCE_DEBUG

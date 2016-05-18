@@ -18,6 +18,9 @@ fullbuild: lxcman
 	python awlsim/definitions.py
 	./create_sym_links.sh
 	cd s3fnet-lxc/base/tklxcmngr/socket_hooks/; make clean; make;
+	cd s3fnet-lxc/base/tklxcmngr/serial_driver/; make clean; make;
+	cd s3fnet-lxc/base/tklxcmngr/virtual_time/; make clean; make;
+	
 	cd s3fnet-lxc/base/; ./build.sh -n $(NUM_CORES)
 
 debuginc: lxcman
