@@ -2,6 +2,7 @@ import os
 import datetime
 import math
 import sys
+import time
 
 n_nodes = 2
 node = 0
@@ -34,7 +35,8 @@ while node <= n_nodes :
 			ls = line.split(',')
 
 			if len(ls) > 0 :
-				dt = datetime.datetime.strptime(ls[0], "%Y-%m-%d %H:%M:%S.%f")
+				#dt = datetime.datetime.strptime(ls[0], "%Y-%m-%d %H:%M:%S.%f")
+				dt = float(ls[0])
 				direction = ls[1]
 				hashval = ls[2]
 				#print("Dt = ", dt, " direction = ", direction, " hashval = ", hashval)
@@ -64,7 +66,8 @@ while j <= 10 :
 total_neg_packets = 0
 total_outlierpackets = 0
 min_negative_delay = 0
-min_packet_send_time = datetime.datetime.now()
+#min_packet_send_time = datetime.datetime.now()
+min_packet_send_time = time.time()
 for packet_id in Packet.keys():
 	if "SEND" in Packet[packet_id].keys() and "RECV" in Packet[packet_id].keys() :
 		a = Packet[packet_id]["SEND"]
@@ -73,7 +76,8 @@ for packet_id in Packet.keys():
 		if a < min_packet_send_time :
 			min_packet_send_time = a
 		#print(d.total_seconds())
-		elapsed_time = float(d.total_seconds())
+		#elapsed_time = float(d.total_seconds())
+		elapsed_time = float(d)
 		if elapsed_time > 0 :
 			m_elapsed_time = int(elapsed_time*1000)
 			bin_no = int(m_elapsed_time / 10)

@@ -505,9 +505,7 @@ def test_run_client_ip(thread_resp_queue,thread_cmd_queue,local_tsap_id,IDS_IP,T
 		
 					
 		try:
-			data = client_socket.recv(BUFFER_SIZE)
-			
-			
+			data = client_socket.recv(BUFFER_SIZE)			
 		except socket.timeout:
 			print("Client RECV timeout error")
 			read_finish_status = 0
@@ -669,6 +667,7 @@ def test_run_client_serial(thread_resp_queue,thread_cmd_queue,conn_time, local_i
 		msg_to_send = frame_outgoing_message(msg_to_send)
 
 		n_wrote = 0
+		log_time = None
 		wt_start = datetime.datetime.now()
 		while n_wrote < len(msg_to_send) :
 
@@ -677,7 +676,7 @@ def test_run_client_serial(thread_resp_queue,thread_cmd_queue,conn_time, local_i
 			poller.register(client_fd, WRITE_ONLY)
 			poll_st_time = get_curr_time(thread_status_arr,time_lock)
 			events = poller.poll(conn_time*1000)
-			log_time = None
+			
 			if len(events) == 0 :
 				poll_curr_time = get_curr_time(thread_status_arr,time_lock)
 				if poll_curr_time - poll_st_time < float(conn_time) :
@@ -691,6 +690,8 @@ def test_run_client_serial(thread_resp_queue,thread_cmd_queue,conn_time, local_i
 				STATUS_CONN = ERROR_MONITORING_TIME_ELAPSED
 				break
 
+			if n_wrote == 0 :
+				log_time = get_curr_time_str(thread_status_arr,time_lock)
 			n_wrote = n_wrote + os.write(client_fd,msg_to_send[n_wrote:])
 
 		
@@ -698,8 +699,8 @@ def test_run_client_serial(thread_resp_queue,thread_cmd_queue,conn_time, local_i
 		d = wt_end - wt_start
 		#print(" Client send msg write time = ", d.total_seconds())	
 
-		if log_time == None :
-			log_time = get_curr_time_str(thread_status_arr,time_lock)
+		#if log_time == None :
+		#	log_time = get_curr_time_str(thread_status_arr,time_lock)
 
 		msg_to_send_hash = str(hashlib.md5(str(msg_to_send)).hexdigest())
 		log_msg = str(log_time) + ",SEND," + str(msg_to_send_hash)		
@@ -770,7 +771,8 @@ def test_run_client_serial(thread_resp_queue,thread_cmd_queue,conn_time, local_i
 				break
 		
 		
-		recv_time = log_time
+		#recv_time = log_time
+		recv_time = get_curr_time_str(thread_status_arr,time_lock)
 		recv_data_hash = str(hashlib.md5(str(recv_msg)).hexdigest())
 		log_msg = str(recv_time) + ",RECV," + str(recv_data_hash)
 		print("Recv msg = ",recv_msg, " Avg read time = ", float(elapsed)/float(number), " Number = ", number, " total read time = ", elapsed)
@@ -906,6 +908,7 @@ def test_run_server_serial(thread_resp_queue,thread_cmd_queue, disconnect, recv_
 			
 
 		#print("Recv msg = ",recv_msg)
+		log_time = get_curr_time_str(thread_status_arr,time_lock)
 		recv_data_hash = str(hashlib.md5(str(recv_msg)).hexdigest())
 		log_msg = str(log_time) + ",RECV," + str(recv_data_hash)
 		LOG_msg(log_msg,local_id,conf_directory)
@@ -946,7 +949,9 @@ def test_run_server_serial(thread_resp_queue,thread_cmd_queue, disconnect, recv_
 				STATUS_CONN = ERROR_MONITORING_TIME_ELAPSED
 				break
 			
-
+			if n_wrote == 0 :
+				log_time = get_curr_time_str(thread_status_arr,time_lock)	
+				
 			n_wrote = n_wrote + os.write(server_fd,response[n_wrote:])
 
 		wt_end = datetime.datetime.now()
@@ -954,8 +959,8 @@ def test_run_server_serial(thread_resp_queue,thread_cmd_queue, disconnect, recv_
 		#print("Sent response to client = ",response, " at " + str(datetime.datetime.now()), " Write time = ", d.total_seconds())
 		sys.stdout.flush()
 		response_hash = str(hashlib.md5(str(response)).hexdigest())
-		if log_time == None :
-			log_time = get_curr_time_str(thread_status_arr,time_lock)
+		#if log_time == None :
+		#	log_time = get_curr_time_str(thread_status_arr,time_lock)
 
 		log_msg = str(log_time)  + ",SEND," + str(response_hash)
 		LOG_msg(log_msg,local_id,conf_directory)		

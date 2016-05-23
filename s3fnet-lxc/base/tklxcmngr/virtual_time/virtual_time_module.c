@@ -409,6 +409,11 @@ ssize_t status_read(struct file *pfil, char __user *pBuf, size_t len, loff_t *p_
 				spin_unlock_irqrestore(&lxc->lxc_entry_lock,flags);
 
 			}
+			else{
+
+				if(current->virt_start_time > 0)
+					now = current->virt_start_time;
+			}
 
 		}
 
@@ -482,8 +487,13 @@ long virt_time_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 
 											arg_lxcName = (char *)gettime->buf;
 											if(tsk != NULL){
-												get_dilated_time(tsk,&tv);
-												now = timeval_to_ns(&tv);	
+
+												if(tsk->virt_start_time > 0)
+													now = tsk->virt_start_time;											
+												else{
+													get_dilated_time(tsk,&tv);
+													now = timeval_to_ns(&tv);	
+												}
 											}
 											else{
 												printk(KERN_INFO "Awlsim: Tsk does not exist %d\n",pid);
